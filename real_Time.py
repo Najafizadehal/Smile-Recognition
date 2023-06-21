@@ -47,11 +47,11 @@ while True:
 
     if y_pred == 'Smile':
         cv2.rectangle(frame, (x,y), (x+w, y+h), (0, 255, 0), 2)
-        cv2.putText(frame, 'Smile', (x, y-40), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 255, 0), 2)
+        cv2.putText(frame, 'Smile', (x, y-20), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 255, 0), 2)
 
     elif y_pred == 'not_Smile':
         cv2.rectangle(frame, (x,y), (x+w, y+h), (0, 0, 255), 2)
-        cv2.putText(frame, 'not Smile', (x, y-40), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 0, 255), 2)
+        cv2.putText(frame, 'not Smile', (x, y-20), cv2.FONT_HERSHEY_PLAIN, 1.2, (0, 0, 255), 2)
 
 
     cv2.imshow('win', frame)
